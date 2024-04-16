@@ -100,3 +100,9 @@
 // };
 
 // export default Login;
+   // const response = await axios({
+      //   method: "get",
+      //   baseURL: "apiUrl",
+      //   url: "requisitions"
+      // })
+      // console.log("response",);
