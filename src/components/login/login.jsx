@@ -6,9 +6,9 @@ import axios from "axios";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("12345678");
-  const [phoneNumber, setPhoneNumber] = useState("+99891 293 63 07");
+  const [username, setUsername] = useState("admin");
+  const [password, setPassword] = useState("1234");
+  // const [phoneNumber, setPhoneNumber] = useState("+99891 293 63 07");
 <h1></h1>
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -40,18 +40,18 @@ const Login = () => {
         <form onSubmit={handleLogin}>
           <div className="mb-4">
             <label
-              htmlFor="phone"
+              htmlFor="Usermane"
               className="block text-sm font-medium text-grey"
             >
-              Phone Number
+             Usermane
             </label>
             <input
-              type="tel"
-              id="phone"
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
+              type="Usermane"
+              id="Usermane"
+              value={setUsername}
+              onChange={(e) => setUsername(e.target.value)}
               className="mt-1 block w-full px-3 py-2 border-white rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-800"
-              placeholder="Phone Number"
+              placeholder="Usermane"
               required
             />
           </div>
@@ -90,3 +90,4 @@ const Login = () => {
 };
 
 export default Login;
+
