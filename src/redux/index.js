@@ -1,17 +1,18 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { api } from '../api';
 
 export const UserCrud = createApi({
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://ratingkorea.pythonanywhere.com/api/v1/' }), // Set your API
+    baseQuery: api, // Set your API
     reducerPath: 'ReatingData',
     tagTypes: ['Reating'],
     endpoints: (builder) => ({
         getTable1: builder.query({
-            query: () => 'custom-users/',
+            query: () => 'products/',
             providesTags: ['Reating'],
         }),
         createTable2: builder.mutation({
             query: (body) => ({
-                url: 'custom-users/',
+                url: 'products/',
                 method: 'POST',
                 body,
             }),
@@ -19,7 +20,7 @@ export const UserCrud = createApi({
         }),
         deleteTbale2: builder.mutation({
             query: (body) => ({
-                url: `custom-users/${body.id}`,
+                url: `products/${body.id}`,
                 method: 'DELETE',
                 body,
             }),
