@@ -140,7 +140,7 @@ const TableCom = () => {
                 </a>
               </li>
             </ul>
-            <UserAddCom/>
+            <UserAddCom />
           </div>
         </div>
       </nav>
