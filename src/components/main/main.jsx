@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useGetTable1Query } from "../../redux";
-import AddProduct from "./add";
 import AddCategories from "./add";
 
 const TableCom = () => {
