@@ -1,7 +1,6 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
 import { api } from "../../../api";
 
-
 export const categoriesApi = createApi({
     reducerPath: "getCategorytData",
     baseQuery: api,
